@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 class="modal-title">ĐĂNG KÝ TÀI KHOẢN</h3>
+    </div>
+    <div class="modal-body-register">
+      <form>
+        <div class="form-group row">
+          <label for="inputUsername" class="col-sm-4 col-form-label">Tên đăng nhập: </label>
+          <div class="col-sm-8">
+            <div class="in-row">
+              <input type="text" class="form-control-plaintext" id="inputUsername" placeholder="username" name="username">
+              <span id="username">*</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputPassword" class="col-sm-4 col-form-label">Mật khẩu: </label>
+          <div class="col-sm-8">
+            <div class="in-row">
+              <input type="password" class="form-control" id="inputPassword" placeholder="password" name="password">
+              <span id="password">*</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputRepassword" class="col-sm-4 col-form-label">Nhập lại mật khẩu: </label>
+          <div class="col-sm-8">
+            <div class="in-row">
+              <input type="password" class="form-control" id="inputRepassword" placeholder="repassword" name="password">
+              <span id="repassword">*</span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-body">
+      <h5 class="modal-title">THÔNG TIN CÁ NHÂN</h5>
+    </div>
+    <div class="modal-body-personal">
+      <form>
+        <div class="form-group row">
+          <label for="inputFullname" class="col-sm-4 col-form-label">Họ và tên: </label>
+          <div class="col-sm-8">
+            <div class="in-row">
+              <input type="text" class="form-control-plaintext" id="inputFullname" placeholder="FullName" name="FullName">
+              <span id="fullname">*</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <label for="inputDoB" class="col-sm-4 col-form-label">Ngày sinh: </label>
+          <div class="col-sm-8">
+            <div class="in-row">
+              <input type="date" class="form-control" id="inputDoB" placeholder="Date of Birth">
+              <span id="doB">*</span>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputGender" class="col-sm-4 col-form-label">Giới tính: </label>
+            <div class="col-sm-8">
+              <div class="radio">
+                <input type="radio" name="gender" id="male" value="m" checked>
+                <label for="male">Nam</label>
+                <input type="radio" name="gender" id="female" value="f" checked>
+                <label for="female">Nữ</label>
+                <span id="gender">*</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputAddress" class="col-sm-4 col-form-label">Địa chỉ: </label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control-plaintext" id="inputAddress" placeholder="Address">
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputPhonenumber" class="col-sm-4 col-form-label">SDT: </label>
+            <div class="col-sm-8">
+              <div class="in-row">
+                <input type="text" class="form-control-plaintext" id="inputPhonenumber" placeholder="Phonenumber">
+                <span id="sdt">*</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="inputEmail" class="col-sm-4 col-form-label">Email: </label>
+            <div class="col-sm-8">
+              <div class="in-row">
+                <input type="email" class="form-control-plaintext" id="inputEmail" placeholder="Email">
+                <span id="email">*</span>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button id="submit" type="submit" class="btn btn-primary">Đăng ký</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Hủy</button>
+      </div>
+    </div>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+        
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Thông báo</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          
+          <!-- Modal body -->
+          <div class="modal-body">
+            <p id="modalMessage"></p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+  </body>
+  <script src="../js/script.js"></script>
+  </html>
+  
